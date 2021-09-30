@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('../Images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    margin-top: 200px;
+    border: 1px solid red ;
+    width: 500px;
+}
+
+.title {
+    background-color: darksalmon;
+    text-align: center;
+    padding: 8px;
+}
+
+form {
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+
+label {
+    width: 30%;
+    color: white;
+}
+
+input[type=text] {
+    width: calc(70% - 20px);
+}
+
+input[type=submit] {
+    width: 15%;
+    align-self: center;
+    cursor: pointer;
+}
+
+a {
+    text-align: center;
+}
+
+.operation {
+    color: lightcoral;
+}
+

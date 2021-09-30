@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4</title>
+    <link rel="stylesheet" href="../Css/style4.css">
+</head>
+<body>
+    <div class="content">
+        <form align='center' action="../LinkForm/BaiTapXulyTT.php" method="post">
+        <h2 class="title">Enter Your Information</h2>
+        <div class="form group">
+            <label>Họ tên: </label>
+            <input type="text" name="name"><br>
+            <label>Địa chỉ: </label>
+            <input type="text" name="address"><br>
+            <label>Số điện thoại: </label>
+            <input type="number" name="phone"><br>
+            <label>Giới tính: </label>
+            <input type="radio" name="gender" value="male" checked> Nam
+            <input type="radio" name="gender" value="female"> Nữ<br>
+            <label>Quốc tịch:</label>
+            <select name="world">
+                <option value="">Chọn Quốc Gia</option>
+                <option <?php if (isset($world) && $world == 'vn') echo "selected=\"selected\"";  ? value="vn" >Việt Nam</option>
+                <option <?php if (isset($world) && $world == 'tq') echo "selected=\"selected\"";  ? value="tq">Trung Quốc</option>
+                <option <?php if (isset($world) && $world == 'usa') echo "selected=\"selected\"";  ? value="usa">Mỹ</option>
+                <option <?php if (isset($world) && $world == 'eng') echo "selected=\"selected\"";  ? value="eng">Anh</option>
+            </select>
+            </select><br>
+            <label>Các môn đã học: </label>
+            <input type="checkbox" name="PHP,MYSQL" value="PHP,MYSQL">PHP & MySQL
+            <input type="checkbox" name="C#" value="C#">C#
+            <input type="checkbox" name="XML" value="XML">XML
+            <input type="checkbox" name="Python" value="Python">PyThon <br>
+            <label>Ghi chú: </label>
+            <textarea name="comment" rows="5" cols="40"></textarea>
+                                
+            <div class="col-lg-12 loginbttm">
+                <div class="Send&Cancel">
+                    <input type="submit" name="submit" class="btn btn-outline-primary" value="Gửi đi" />
+                    <input type="reset" name="submit" class="btn btn-outline-primary" value="Hủy" />
+                </div>
+            </div>
+    
+</body>
+</html>
